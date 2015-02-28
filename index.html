@@ -26,6 +26,17 @@
 				<button v-repeat="op: operators" class="btn btn-primary" v-on="click: operator(op)">
 					{{ op }}
 				</button>
+				<button class="btn btn-primary" v-on="click: evaluate()">
+					=
+				</button>
+				<button class="btn btn-primary" v-on="click: clear()">
+					CLR
+				</button>
+				
+				<div class="debug">
+					| {{ buffers.nom }} | {{ operation }} | {{ buffers.denom }} |
+				</div>
+				
 			</div><!-- end calculator -->
 		</div>
 		<!-- include javascript --> 
