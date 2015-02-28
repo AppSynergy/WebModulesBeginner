@@ -16,8 +16,14 @@
 			<hr>
 			<p>Here is our demo:</p>
 			<div class="well calculator">
-				CONTROLS GO HERE
-			</div>
+				<!-- repeat the button for each n in numbers -->
+				<button v-repeat="n: numbers" class="btn btn-primary">
+					{{ n }}
+				</button>
+			</div><!-- end calculator -->
 		</div>
+		<!-- include javascript --> 
+		<script type="text/javascript" src="bower_components/vue/dist/vue.js"></script>
+		<script type="text/javascript" src="js/calcvue.js"></script>
 	</body>
 </html>
