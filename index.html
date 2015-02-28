@@ -16,9 +16,14 @@
 			<hr>
 			<p>Here is our demo:</p>
 			<div class="well calculator">
+				<div class="output"></div>
 				<!-- repeat the button for each n in numbers -->
 				<button v-repeat="n: numbers" class="btn btn-primary">
 					{{ n }}
+				</button>
+				<!-- repeat the button for each op in operators -->
+				<button v-repeat="op: operators" class="btn btn-primary">
+					{{ op }}
 				</button>
 			</div><!-- end calculator -->
 		</div>
