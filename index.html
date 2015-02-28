@@ -17,13 +17,13 @@
 			<hr>
 			<p>Here is our demo:</p>
 			<div class="well calculator">
-				<div class="output"></div>
+				<div class="output">{{ output }}</div>
 				<!-- repeat the button for each n in numbers -->
-				<button v-repeat="n: numbers" class="btn btn-primary">
+				<button v-repeat="n: numbers" class="btn btn-primary" v-on="click: operand(n)">
 					{{ n }}
 				</button>
 				<!-- repeat the button for each op in operators -->
-				<button v-repeat="op: operators" class="btn btn-primary">
+				<button v-repeat="op: operators" class="btn btn-primary" v-on="click: operator(op)">
 					{{ op }}
 				</button>
 			</div><!-- end calculator -->
