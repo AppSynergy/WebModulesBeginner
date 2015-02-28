@@ -1,0 +1,13 @@
+.calculator, .output {
+	border: 2px solid #777;
+}
+
+.output {
+	height: 60px;
+	background-color: #ddd;
+	margin-bottom: 20px;
+}
+
+.btn {
+	margin-right: 5px
+}
